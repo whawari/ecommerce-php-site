@@ -6,7 +6,6 @@ include_once 'user.php';
 //     itemDescription LONGTEXT not null,
 //     itemPrice LONGTEXT not null,
 //     itemImgName LONGTEXT not null,
-//     quantity INT(2) UNSIGNED not null,
 //     PRIMARY KEY (cart_id)
 //   )ENGINE=InnoDB";
 // if($connection->query($sql) === true){
