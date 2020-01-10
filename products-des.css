@@ -1,0 +1,66 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+* {
+	box-sizing: border-box;
+}
+.body {
+	display: grid;
+	grid-template-columns: 100%;
+}
+.image {
+	background-image: url('images/walids.png');
+	width: 12.5rem;
+	height: 11rem;
+	grid-area: image;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.image:hover {
+	cursor: pointer;
+}
+.categories {
+	grid-area: categories;
+	text-align: center;
+}
+.categories > a {
+	padding: 0rem 1rem;
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: #324b4c;
+}
+.categories > a:hover{
+	cursor: pointer;
+}
+.about {
+	grid-area: about;
+	position: relative;
+	text-align: end;
+	padding-right: 2rem;
+}
+.about > a {
+	padding: 0rem .5rem;
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: #324b4c;
+}
+.header {
+	display: grid;
+	grid-template-areas: 'image categories categories about';
+	align-items: center;
+}
+section{
+    position: relative;
+    top: 10vh;
+    margin-left: 4vw;
+    display: grid;
+    grid-template-columns: 50vw 40vw;
+    column-gap: 5vw;
+}
+.photo{
+    width: 50vw;
+    height: 60vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

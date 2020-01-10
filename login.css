@@ -1,0 +1,86 @@
+/* inputs width need to be adjusted when responsive */
+
+html {
+	font-size: 16px;
+	font-family: 'Courier New', Courier, monospace;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	display: grid;
+	column-gap: 2rem;
+	grid-template-areas: "header header about" ". login signup" ". login signup";
+}
+* {
+	box-sizing: border-box;
+}
+.image {
+	background-image: url("images/walids.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 12.5rem;
+	height: 11rem;
+	margin-left: 2rem;
+	grid-area: image;
+}
+.image:hover {
+	cursor: pointer;
+}
+.header {
+	grid-area: header;
+}
+.login {
+	grid-area: login;
+	padding: 2rem;
+}
+.signup {
+	grid-area: signup;
+	padding: 2rem;
+}
+.about {
+	grid-area: span;
+	position: relative;
+	text-align: end;
+	top: 20%;
+	right: 10%;
+}
+input[type=text],
+input[type=password] {
+	display: block;
+	border: none;
+	outline: none;
+	width: 20rem;
+	margin-top: 3rem;
+	padding: .5rem;
+	border-bottom: .1rem solid rgb(150, 150, 150);
+}
+input[type=text]:focus,
+input[type=password]:focus {
+	border-bottom: .1rem solid black;
+}
+.login form p {
+	font-size: .8rem;
+	text-decoration: underline;
+}
+input[type=submit] {
+	width: 10rem;
+	padding: 1rem;
+	color: white;
+	background-color: black;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+input[type=submit]:hover,
+.signup button:hover {
+	background-color: rgb(180, 180, 180);
+}
+.signup button {
+	background-color: black;
+	height: 3rem;
+	width: 15rem;
+	color: white;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}

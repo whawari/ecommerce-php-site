@@ -1,0 +1,110 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+*,
+*::before {
+	box-sizing: border-box;
+}
+.image {
+	background-image: url('images/walids.png');
+	width: 12.5rem;
+	height: 11rem;
+	margin-left: 2rem;
+	grid-area: image;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.image:hover {
+	cursor: pointer;
+}
+.about {
+	grid-area: about;
+	position: relative;
+	text-align: end;
+	padding-right: 2rem;
+}
+.about > a {
+	padding: 0rem .5rem;
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: #324b4c;
+}
+.header {
+	display: grid;
+	grid-template-areas: 'image categories categories about';
+	align-items: center;
+}
+section {
+	margin-left: 25vw;
+}
+input[type=text],
+input[type=password] {
+	border: none;
+	outline: none;
+	width: 20rem;
+	padding: .5rem;
+	border-bottom: .1rem solid rgb(150, 150, 150);
+}
+input[type=text]:focus,
+input[type=password]:focus {
+	border-bottom: .1rem solid black;
+}
+input[type=submit] {
+	width: 15rem;
+	padding: 1rem;
+	color: white;
+	background-color: black;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background-color: rgb(180, 180, 180);
+}
+form {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+form span {
+	margin: 3rem 0;
+	max-width: 20rem;
+}
+span[pass-des],
+span[mail-des],
+span[phone-des] {
+	position: relative;
+}
+span[pass-des]:hover::after {
+	content: attr(pass-des);
+	position: absolute;
+	left: 0;
+	top: 2.5rem;
+	max-width: 20rem;
+	color: #000000;
+	font-size: 14px;
+	z-index: 1;
+}
+span[mail-des]:hover::after {
+	content: attr(mail-des);
+	position: absolute;
+	left: 0;
+	top: 2.5rem;
+	max-width: 20rem;
+	color: #000000;
+	font-size: 14px;
+	z-index: 1;
+}
+span[phone-des]:hover::after {
+	content: attr(phone-des);
+	position: absolute;
+	left: 0;
+	top: 2.5rem;
+	max-width: 20rem;
+	color: #000000;
+	font-size: 14px;
+	z-index: 1;
+}
+input[type=submit] {
+	margin: 3rem 0;
+}

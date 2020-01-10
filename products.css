@@ -1,0 +1,150 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+* {
+	box-sizing: border-box;
+}
+.body {
+	display: grid;
+	grid-template-columns: 100%;
+}
+.image {
+	background-image: url('images/walids.png');
+	width: 12.5rem;
+	height: 11rem;
+	grid-area: image;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.image:hover {
+	cursor: pointer;
+}
+.categories {
+	grid-area: categories;
+	text-align: center;
+}
+.categories > a {
+	padding: 0rem 1rem;
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: #324b4c;
+}
+.categories > a:hover{
+	cursor: pointer;
+}
+.about {
+	grid-area: about;
+	position: relative;
+	text-align: end;
+	padding-right: 2rem;
+}
+.about > a {
+	padding: 0rem .5rem;
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: #324b4c;
+}
+.header {
+	display: grid;
+	grid-template-areas: 'image categories categories about';
+	align-items: center;
+}
+.afterheadertext {
+	display: grid;
+	grid-template-columns: 100%;
+	text-align: center;
+}
+.afterheadertext p{
+	font-size: 1.5rem;
+}
+/* gallery */
+.photo{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20rem;
+    height: 20rem;
+}
+.gallery-container a{
+	cursor: default;
+	text-decoration: none;
+	color: #324b4c;
+	text-align: center;
+}
+.gallery-container div{
+    cursor: pointer;
+}
+.gallery-container{
+    display: grid;
+	grid-template-columns: 25% 25% 25% 25%;   
+	padding: 1rem;
+	margin: 1rem 0;
+}
+.gallery-container p , .gallery-container h2 {
+	cursor: pointer;
+}
+.gallery-upload {
+	margin: 0 25vw;
+}
+.gallery-upload form{
+	display: grid;
+	grid-template-columns: auto;
+	max-width: 50vw;
+	row-gap: 2rem;
+	justify-content: center;
+}
+.gallery-upload form input[type=text]{
+	padding: .5rem;
+	width: 25vw;
+}
+.gallery-upload form button{
+	padding: .5rem;
+	width: 25vw;
+}
+.custom-file-input {
+	color: transparent;
+	outline: none;
+}
+.custom-file-input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+.custom-file-input::before {
+	content: 'Select some files';
+	color: black;
+	display: inline-block;
+	background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+	border: 1px solid #999;
+	border-radius: 3px;
+	padding: 5px 8px;
+	outline: none;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	text-shadow: 1px 1px #fff;
+	font-weight: 700;
+	font-size: 10pt;
+}
+.custom-file-input:hover::before {
+	border-color: black;
+}
+.custom-file-input:active {
+	outline: 0;
+}
+.custom-file-input:active::before {
+	background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+/* basket decoration */
+.items-wrapper{
+	margin: 2rem;
+}
+.wrapper-two{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+}
+.picture{
+	width: 20vw;
+	height: 10vw;
+	background-repeat: no-repeat;
+	background-size: contain;
+}

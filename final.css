@@ -1,0 +1,175 @@
+html {
+	font-size: 16px;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.desktop {
+	position: relative;
+}
+.header {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	text-align: center;
+	font-size: 2em;
+	position: fixed;
+	width: 100vw;
+	z-index: 2;
+	background-color: #eefcfc;
+	min-height: 8vh;
+	align-content: center;
+}
+.header div a {
+	text-decoration: none;
+	color: #324b4c;
+	position: relative;
+	display: inline-block;
+	width: fit-content;
+}
+*::after {
+	box-sizing: border-box;
+}
+.lineba a::after {
+	content: "";
+	background-color: #324b4c;
+	position: absolute;
+	margin-left: -10px;
+	width: 4em;
+	height: .1em;
+	display: block;
+}
+.lineba a:hover {
+	transform: scale(.8, .8);
+}
+.border {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 3em;
+	color: #00c9d8;
+}
+.img1 {
+	background-image: url("images/des-rack.jpg");
+	height: 100vh;
+}
+.img2 {
+	background-image: url("images/des-suite.jpg");
+	height: 50vh;
+}
+.img3 {
+	background-image: url("images/des-mf.jpg");
+	height: 50vh;
+}
+.img4 {
+	background-image: url("images/des-shirt.jpg");
+	height: 100vh;
+}
+.img1,
+.img2,
+.img3,
+.img4 {
+	position: relative;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.text-container {
+	display: grid;
+	grid-template-areas: 100%;
+	text-align: center;
+}
+h1 {
+	color: #324b4c;
+	font-size: 3em;
+}
+.text-container p {
+	font-size: 2em;
+	color: #324b4c;
+	text-align: center;
+}
+.cards-wrapper {
+	display: grid;
+	padding: 1em;
+	margin: 3em;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+	height: 20em;
+	align-content: center;
+}
+.profile-img-wrapper {
+	content: "";
+	background-image: url("images/profile-pic2.png");
+	background-repeat: no-repeat;
+	width: 4em;
+	height: 4em;
+	background-size: contain;
+	border-radius: 90px;
+	grid-area: one;
+}
+.profile-name {
+	grid-area: two;
+	text-transform: capitalize;
+}
+.abbr {
+	grid-area: three;
+	padding: 1em;
+}
+.shop {
+	grid-area: four;
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.shop a {
+	text-decoration: none;
+	color: #57a0d3;
+	border: 2px solid #57a0d3;
+	width: fit-content;
+	padding: 4px;
+}
+.shop span {
+	padding-left: 1em;
+}
+.card {
+	display: grid;
+	grid-template-areas: "one two two two" "three three three three" "four four four four";
+	font-size: 1.3em;
+	text-transform: capitalize;
+}
+.card-wrap {
+	background-color: rgba(50, 50, 50, 0.1);
+	margin: 2px;
+	border-radius: 10px;
+}
+.footer {
+	margin: .2em;
+	font-size: 2em;
+}
+.follow-us {
+	float: left;
+	width: 70%;
+}
+.rights {
+	float: left;
+	width: 30%;
+}
+.follow-us a {
+	text-decoration: none;
+}
+.fa-facebook {
+	color: #3b5998;
+	grid-area: facebook;
+}
+.fa-instagram {
+	color: #fb3958;
+	grid-area: insta;
+}
+.fa-youtube {
+	color: #ff0000;
+	grid-area: youtube;
+}
